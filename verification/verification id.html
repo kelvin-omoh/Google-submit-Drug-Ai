@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+            margin: 0;
+            padding:0;
+            transition: 4s ease-in;
+          background-image: url(./istockphoto-924418708-170667a.jpg);
+          background-size: cover;
+          
+        
+    }
+    .container{
+        transition: 4s ease-in;
+           height: 80vh;
+        width: 28rem;
+        margin:  3rem auto ;
+        border-radius: 2rem;
+        background-color: rgba(255, 255, 255, 0.067);
+    }
+  input:nth-child(5){
+      background: rgb(20, 20, 20);
+  }
+  legend{
+      color: red;
+  }
+    input{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgba(255, 255, 255, 0.129);
+         color: rgb(72, 230, 9);
+        margin:.2rem;
+        height: 2rem;
+        width: 25rem;
+       border: 1px solid blue;
+        border-radius: 0.7rem;
+
+    }
+    
+   .invalid-email{
+       margin-top: -.2rem;
+       font-family: monospace;
+       font-size: 1.2rem;
+        color: rgba(255, 0, 0, 0.704);
+        display: none;
+    }
+    
+    input:nth-child(3){
+        color: #fff;
+    }
+    
+   .invalid-password{
+    margin-top: -.2rem;
+       font-family: monospace;
+       font-size: 1.2rem;
+        color: rgba(255, 0, 0, 0.704);
+        display: none;
+   }
+    
+   p:nth-child(5){
+       font-size:1rem;
+       color: red;
+        margin: 5px;
+        display: none;
+   }
+    input::placeholder{
+        color:rgb(1, 132, 184);
+    }
+    p{
+        text-align: justify;
+        padding-left:1.5rem ;
+        color:#fff;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+    }
+   .textAbove{
+    padding-left:1.5rem ;
+    text-align: justify;
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+
+    }
+    .main{
+        width: 90%;
+        margin:auto;
+    }
+    .page3{
+        overflow: hidden;
+        transition: 4s ease-in;
+        display:none;
+    }
+    .page3 .img{
+        font-size: 4rem;
+        
+        text-align: center;
+        width:30% ;
+         padding: 1rem 2rem  0rem 2rem;
+    }
+    .page3 h1{
+        color: rgb(255, 189, 6);
+        font-size: 3rem;
+        width: 3rem;
+        padding: 2rem;
+        font-family:monospace;
+    }
+    .page3 li{
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+        color: rgb(113, 251, 78);
+        font-size: 1.2rem;
+        list-style: none;
+    }
+    .page3 .consistency{
+        padding-top: 2rem;
+          padding-left: 2em;
+    }
+    .page3 .consistency h2{
+        color: rgb(255, 166, 0);
+        width: 7.4rem;
+        animation: consistency 20s infinite ease-in-out;
+        border-radius: 12rem 34rem;  position: absolute;
+        margin: 3rem;
+    }
+    .page3 .hambugger{
+        
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        float: right;
+        margin: 2rem;
+        
+    }
+   .page3 .hambugger .bar{
+         background-color: rgb(255, 162, 31);
+         display: block ;
+         height: 0.5rem;
+         width: 2.4rem;
+         margin: 0.5rem;
+         border-radius: 0.2rem 2rem;
+         transition: all .6s ease-in;
+    }
+    .x-change .bar1{
+        transform: translatey(20px)rotate(-45deg) ;
+
+    
+    }
+    .x-change .bar2{
+       opacity: 0;
+    }
+    .x-change .bar3{
+        transform: translatey(-9px)rotate(45deg) ;
+    }
+    @keyframes consistency {
+        10%{
+          
+          background: rgba(0, 191, 255, 0.056);
+          color: aqua;
+
+        }
+    }
+     .nav ul {
+        float: right;
+        margin-top:8rem;
+        margin-right: -20rem;
+        background-color: rgb(6, 56, 62);
+        border-radius: 2rem;
+       width: 20%;
+       max-width:5rem;
+       height: 10rem;
+       padding: 2rem;
+       transition: .6s ease;
+      
+    }
+    .nav-item.x-change{
+        margin: 8rem -5rem 0 0;
+    }
+    .nav ul li{
+      margin-left: 0.7rem;
+      padding: .8rem;
+      color: red;
+      text-transform: capitalize;
+      transition: all .2s ease-in-out;
+      font-weight: bold;
+      font-family: cursive;
+      list-style: circle;
+    }
+    
+    .nav ul li:hover{
+        color: rgb(255, 68, 0);
+        font-size: 1.4rem;
+    }
+    .enter-page{
+        display: none;
+    }
+    .page2{
+        width: 70%;
+       margin-top: -15rem;
+       margin-left: 15rem;
+
+    }
+    .page2 h2{
+        
+        color: rgb(255, 3, 3);
+        font-family:  Arial Narrow Bold;
+        font-size: 2rem;
+        width: 38rem;
+        margin: 30rem 0 0 auto;
+        
+    } 
+    .page2 h3{
+        color: rgb(139, 133, 125);
+        font-family: 'Courier New', Courier;
+        margin-left:12rem ;
+    }
+    .page2 button{
+       margin: 4rem 30rem;
+       width: 8rem;
+       background-color: darkgreen;
+       color: #fff;
+       height: 3rem;
+       border-radius: 2rem;
+        border: 1px solid darkgreen;
+       
+    }
+    .page2 button:hover{
+        border: 1px solid rgb(108, 127, 108);
+    
+       background-color: rgb(2, 40, 2);
+    }
+    
+   
+</style>
+
+<body>
+    <div class="container">
+        <form action="mail-to:enaikeleomoh@gmail.com">
+        <fieldset>
+       <legend>K.NET</legend>
+       
+     <div class="textAbove">
+         <h4>
+             welcome back,
+         </h4>
+         <h5>sign in to continue</h5>
+        
+     </div>
+     <input class="email" type="email" placeholder="Email, phone number" required>
+     <p class="invalid-email"> invalid email</p>
+     <input type="text" placeholder="password" class="password">
+     <p class="invalid-password"> invalid password/email try again later</p>
+      
+     <p> Forgot password? </p>
+     <input type="button" onclick="x()"  id="sign-in" value="signIn "> 
+    </fieldset>
+    </form>
+    </div>
+    <section class="enter-page">
+         <div class="page2">
+             <div class="h2text">
+                   <h2>WELCOME___sir</h2>
+             </div>
+             <div class="description">
+                <h3>connect with kelvin,lets get to know  <code>professor-green......</code></h3>
+             </div>
+             <div class="pg2btn">
+                 <button onclick="spage3()">get started</button>
+             </div>
+                    </div>
+    </section>
+
+           <!--page 3-->
+           <div class="section">
+    <div class="page3">
+        <div class="hambugger" onclick="change()">
+             <div class="bar bar1"></div>
+             <div class="bar  bar2"></div>
+             <div class="bar bar3"></div>
+        </div>
+        <div class="nav">
+            <ul class="nav-item">
+                <a href=""><li>home</li></a>
+                <a href=""> <li>about</li></a>  
+                <a href=""><li>contact</li></a>  
+            </ul>
+        </div>
+
+        <div class="img">
+            👨‍🎓
+        </div>
+        
+        <div class="main-name">
+             <h1>Enaikele kelvin</h1>
+        </div>
+        <div class="list">
+            <li> 🧮   Templates</li>
+            <li>🔣   Categories</li>
+            <li>📈   Analytics</li>
+        </div>
+        <div class="consistency">
+          <img src="./images.jpeg" alt="">
+          <h2>
+              consistency
+          </h2>
+           </div>
+
+        </div>
+</div>
+    <script>
+
+        
+        let email =document.querySelector(".email");
+        let password =document.querySelector(".password");
+        let signin=document.querySelector("#sign-in");
+           
+        function x(){
+           if(email.value =="enaikeleomoh@gmail.com" ){
+              alert("email is valid");
+              document.querySelector(".invalid-email").style.display="none";
+
+        }
+           if(email.value =="09073597660"){
+              alert("email is valid");
+              document.querySelector(".invalid-email").style.display="none";
+
+        }
+        else if(email.value != "enaikeleomoh@gmail.com"){
+            alert("email is invalid try again")
+          document.querySelector(".invalid-email").style.display="block";
+        } 
+
+           if( password.value =="COLNAS"){
+            alert("welcome professor green")
+            
+          document.querySelector(".invalid-password").style.display="none";
+          document.querySelector(".container").style.display="none";
+          document.querySelector(".enter-page").style.display="block";
+          document.querySelector("#page3").style.display="block";
+
+        }
+        else{
+          document.querySelector(".invalid-password").style.display="block";
+        }  
+
+         
+
+
+        }
+       let hambugger= document.querySelector(".hambugger");
+       let x_change = document.querySelector("x_change0");
+       let nav_item= document.querySelector(".nav-item");
+      function change(){
+            hambugger.classList.toggle("x-change")
+          nav_item.classList.toggle("x-change")
+     
+       }
+      function spage3(){
+            document.querySelector(".page3").style.display="block";
+            document.querySelector(".page2").style.display="none";
+            
+              
+            
+          } 
+    </script>
+</body>
+</html>

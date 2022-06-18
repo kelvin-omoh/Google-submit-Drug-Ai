@@ -1,0 +1,201 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body { 
+    background-color:  rgb(11, 11, 41);
+}
+
+.container { 
+    position: fixed;
+    width: 75px;
+    transition: .5s;
+    inset: 20px 0 20px 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.open { 
+    width: 250px;
+}
+
+.container .hamburger { 
+    position: absolute;
+    /* top and left for fixed hamburger */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 0 17px;
+    /* background-color: rgb(157, 159, 165); */
+    border-bottom: 1px solid rgb(11, 11, 41);
+    
+}
+
+.container .hamburger::before,
+.container .hamburger::after { 
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 41);
+}
+
+.container .hamburger::before { 
+    transform: translateY(8px);
+    box-shadow: 0 -8px rgb(11, 11, 41);
+    transition: .5s ease;
+}
+
+.container .hamburger::after { 
+    transform: translateY(-8px);
+    transition: .5s ease;
+}
+
+.container.open .hamburger::after { 
+    transform: rotate(45deg);
+    transition: .5s ease;
+}
+
+.container.open .hamburger::before { 
+    transform: rotate(-45deg);
+    box-shadow: none;
+    transition: .5s ease;
+}
+
+.container ul { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.container ul li { 
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.container ul li a { 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    transition: .5s ease;
+    /* background-color: rgb(209, 199, 199); */
+}
+
+.container ul li a .icon { 
+   /* display: block;  */
+   font-size: 25px;
+   min-width: 55px;  
+   height: 55px;
+   border-radius: 10px;
+   line-height: 55px;
+   transition: .5s ease;
+}
+
+.container ul li.active a .icon{ 
+    /* color: #fff; */
+    /* background-color: red; */
+    transform: translateX(30px);
+    background-color: var(--clr);
+}
+
+.container ul li.active a .text { 
+    transform: translateX(25px);
+    color: var(--clr);
+}
+ 
+.container ul li a .text { 
+    margin: 12px;
+    visibility: hidden;
+     
+}
+
+.container.open ul li a .text { 
+    visibility: visible;
+}
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.container ul { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.container ul li { 
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    
+}
+
+.container ul li a { 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.container ul li a .icon { 
+    display: block;
+}
+
+ 
+ 
+ 
+ */
