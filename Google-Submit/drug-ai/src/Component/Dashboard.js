@@ -18,7 +18,7 @@ const Dashboard = () => {
             <input type="text" className='p-5 w-[25vw] rounded-l-md' placeholder='Enter a specific model for the sample ' />
         <select className='py-[1.36em] mr-3 rounded-r-md' name="" id="">
             <label htmlFor="">Enter your model</label>
-            <option value="">A</option>
+            <option value="">A-</option>
             <option value="">b</option>
             <option value="">c</option>
             <option value="">d</option>
