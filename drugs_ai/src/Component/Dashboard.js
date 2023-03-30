@@ -27,6 +27,7 @@ const Dashboard = () => {
             <option value="">g</option>
             <option value="">h</option>
             <option value="">i</option>
+            <option value="">k</option>
         </select>
         <button className=' bg-[#4750AB] py-5 px-8 rounded-md text-white'>Submit</button>
         </div>
