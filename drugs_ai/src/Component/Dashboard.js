@@ -9,7 +9,7 @@ const Dashboard = () => {
           <Navigation/>
         </div>
 
-        <div className='mt-[3em] flex flex-col items-center justify-center '>
+        <div className=' flex flex-col items-center justify-center '>
  {/* DASHBOARD */}
  <div >
             <h1 className='text-[1.3em] font-bold p-4 '>Dashboard</h1>
