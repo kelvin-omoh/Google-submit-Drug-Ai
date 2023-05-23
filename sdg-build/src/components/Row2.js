@@ -88,7 +88,7 @@ const handleCheck = (id)=>{
            
               
               
-               <div id={"slider"+RowId} className={` w-fit md:h-full ${view? 'grid grid-cols-1':'flex' } h-full  grid-cols-2  gap-3 overflow-x-scroll  overflow-hidden whitespace-nowrap scroll-smooth scrollbar-hide relative`}>
+               <div id={"slider"+RowId} className={` w-full md:h-full ${view? 'grid grid-cols-1 md:grid-col-1':'flex' } h-full  grid-cols-2  gap-3 overflow-x-scroll  overflow-hidden whitespace-nowrap scroll-smooth scrollbar-hide relative`}>
                 
               
                 {movies?.map((movie,id)=>(
