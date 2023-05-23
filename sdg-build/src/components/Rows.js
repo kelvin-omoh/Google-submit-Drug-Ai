@@ -75,12 +75,12 @@ const viewAll=()=>{
         {/* {setMovies({...movie,check:false])} */}
 
 
-        <div   className=' flex  flex-col  h-[190.82px] md:h-full'>
+        <div   className=' flex  flex-col  h-[190.82px] '>
            <div className={`  w-[110.7px] md:h-[256px]   ${view? 'md:w-full':' md:w-[256px]' } md:w-[256px] lg:w-[256px] my-0 md:my-8 `}>
            {/* {/* <div className='  h-full md:h-[256px] w-full  my-1 md:my-8  >  */}
            <div data-aos="fade-down"  data-aos-duration='1000' transition-duration="1000" key={id} className=" h-fit  cursor-pointer relative ">
            
-      <img className="md:w-full h-[98px]  lg:h-[256px] rounded-t-[6px] md:rounded-[44px] block object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie.title} />
+      <img className="md:w-full h-[98px]  lg:h-[256px] rounded-t-[6px] md:rounded-[14px] block object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie.title} />
 
       <button id={movie.id} onClick={()=>handleCheck(movie.id)} className='bg-[#00B59833] hover:bg-[#00b5676c] rounded-full  z-20 right-2 md:right-4 top-2 absolute p-2 md:p-3'> { movie.checked===true ? <FaCheck  className='    text-[#00B598]  '/>   :<FaPlus  className='     text-white  '/>  }</button>
       

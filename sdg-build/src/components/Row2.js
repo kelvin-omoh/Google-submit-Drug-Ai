@@ -88,7 +88,7 @@ const handleCheck = (id)=>{
            
               
               
-               <div id={"slider"+RowId} className={` w-full md:h-full ${view? 'grid grid-cols-1 md:grid-col-1':'flex' } h-full  grid-cols-2  gap-3 overflow-x-scroll  overflow-hidden whitespace-nowrap scroll-smooth scrollbar-hide relative`}>
+               <div id={"slider"+RowId} className={` w-full md:h-full ${view? 'grid grid-cols-1 md:grid-col-1':'flex' } h-full place-content-center   overflow-x-scroll  overflow-hidden place-items-center  grid-cols-1  gap-3 -nowrap scroll-smooth scrollbar-hide relative`}>
                 
               
                 {movies?.map((movie,id)=>(
@@ -99,7 +99,7 @@ const handleCheck = (id)=>{
         <div   className=' flex w-[358px] md:w-[544px] justify-center items-center   relative  mx-0 md:mx-[30px] h-full rounded-[44px] bg-[#FFFFFF1A] p-2 mb-4'>
            <div className='  flex  justify-between items-center w-[358px] md:w-[454px]  md:h-[304px] h-full md:px-0 px-3   my-8 '>
             
-           <div data-aos="fade-in"  data-aos-duration='1000'   transition-duration="1000"  key={id} className="  flex gap-4 w-[358px] md:w-full cursor-pointer   ">
+           <div data-aos="fade-in" key={id} className="  h-full  flex gap-4 w-[358px] md:w-full cursor-pointer   ">
            <div className='w-full h-full  grid place-content-center  place-items-center   '>
              <img className="w-[82.58px] md:w-[256px]  h-[70%] md:h-[304px]  rounded-[12px] md:rounded-[44px]  absolute top-[20px] opacity-40    block object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie.title} />
       <img className=" w-[98.58px] md:w-[256px]  h-[70%] md:h-[304px]  rounded-[12px] md:rounded-[44px]  absolute top-[32px] opacity-40    block object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie.title} />
